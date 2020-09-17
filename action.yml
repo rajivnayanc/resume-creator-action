@@ -1,5 +1,8 @@
 name: 'resume-creator-action'
 description: 'Create a Resume Page automatically from JSON file and host on github pages.'
+branding:
+  icon: 'book-open'
+  color: 'blue'
 inputs:
     FileName:
         description: 'Resume filename in JSON format'

@@ -1,3 +1,5 @@
+![](header.png)
+
 # Resume Creator from JSON
 Creates Resume Github Page from JSON using Github Actions.
 
