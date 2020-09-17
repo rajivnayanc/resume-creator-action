@@ -1,0 +1,32 @@
+{
+  "name": "resume-creator-action",
+  "version": "1.0.0",
+  "description": "Create a Resume HTML Page automatically from JSON file and host on github pages",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "ncc build index.js --license licenses.txt",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "first-step": "npm run build && git add ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajivnayanc/resume-creator-action.git"
+  },
+  "keywords": [
+    "actionshackathon",
+    "github-actions",
+    "resume-creator"
+  ],
+  "author": "Rajiv Nayan Choubey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rajivnayanc/resume-creator-action/issues"
+  },
+  "homepage": "https://github.com/rajivnayanc/resume-creator-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.5",
+    "@actions/github": "^4.0.0",
+    "@jamesives/github-pages-deploy-action": "^3.6.1"
+  }
+}

@@ -1,0 +1,10 @@
+name: 'resume-creator-action'
+description: 'Create a Resume Page automatically from JSON file and host on github pages.'
+inputs:
+    FileName:
+        description: 'Resume filename in JSON format'
+        required: true
+        default: './resume.json'
+runs:
+    using: 'node12'
+    main: 'dist/index.js'
