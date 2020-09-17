@@ -39,8 +39,8 @@ const generateContent = (contents)=>{
         }
         return `
         <div class="row justify-content-center">
-            <div class="col-3 text-center"><h4>${content.title}</h4></div>
-            <div class="col-6">${rightContent}</div>
+            <div class="col-3 col-md-3 text-center"><h4>${content.title}</h4></div>
+            <div class="col-9 col-md-6">${rightContent}</div>
         </div>
         <hr/>
         `;
@@ -54,6 +54,7 @@ const createHtml = (body)=>`
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
         <title>${body.name}</title>
         <style>
@@ -70,7 +71,7 @@ const createHtml = (body)=>`
                 <div class="col-12 text-center">
                     <h1>${body.name}</h1>
                 </div>
-                <div class="col-6">
+                <div class="col-12">
                     <h1>${body.header}</h1>
                 </div>
             </div>
@@ -81,8 +82,8 @@ const createHtml = (body)=>`
                 </div>
             </div>
             <div class="row mt-5 justify-content-center">
-                <div class="col-6 text-center">
-                   <p> <strong>Made with Love by ${body.name}</strong></p>
+                <div class="col-12 col-md-6 text-center">
+                   <p> <strong>Made with <i style="color:red" class="fa fa-heart"></i>  by ${body.name}</strong></p>
                 </div>
             </div>
         </div>
